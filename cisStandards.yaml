@@ -3,7 +3,7 @@
 
 - name: CIS 1
   hosts: AnsibleTestPlaybooks
-  user: eme1m8u
+  user:
   sudo: true
 
   tasks:
@@ -37,7 +37,7 @@
 
  # CIS BenchMarks section 1 level 1 all scored
 
-  
+
 
   - name: upgrading all packages
     yum: name=* state=latest
@@ -216,4 +216,3 @@
 
   - name: Rsyslong installation
     yum: name=rsyslog state=latest
-
